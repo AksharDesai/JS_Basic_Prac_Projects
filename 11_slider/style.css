@@ -1,0 +1,70 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+html,body{
+   width: 100%;
+   height: 100%;
+}
+main{
+   width: 100%;
+   height: 100%;
+}
+.carousel{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+}
+
+
+
+
+.carousel-item{
+    width: 100%;
+    height: 100%;
+    display: none;
+    overflow: hidden;
+    /* background-color: yellow; */
+    transition: ease-in-out 0.5s;
+
+}
+.carousel-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: ease-in-out 0.5s;
+    
+    
+}
+.active{
+    display: block;
+    transition: ease-in-out 0.5s;
+}
+
+
+
+
+.buttons{
+    
+}
+button{
+    
+    border-radius: 25px;
+    padding: 20px 20px;
+    border: none;
+    font-size: 15px;
+}
+
+#left{
+    position: fixed;
+    top: 50%;
+    left: 50px;
+    
+}
+#right{
+    position: fixed;
+    top: 50%;
+    right: 50px;
+}

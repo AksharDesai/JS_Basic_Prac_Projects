@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PreLoader</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+      }
+      main {
+        width: 100%;
+        height: 100%;
+      }
+      .content {
+        width: 100%;
+        height: 100%;
+        background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        font-size: 40px;
+      }
+      .preloader {
+        width: 100%;
+        height: 100%;
+        background-color: rgb(163, 162, 162);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10000; /* High z-index to cover other content */
+      }
+      .hide-loader {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="preloader">
+        <i class="fa fa-spinner fa-spin" style="font-size: 240px"></i>
+      </div>
+      <div class="content">
+        <h1>Hello</h1>
+      </div>
+    </main>
+    <script>
+      // Show preloader immediately
+      const preloader = document.querySelector(".preloader");
+      preloader.style.display = "flex";
+
+      // Set a maximum loading time (e.g., 10 seconds)
+      const maxLoadTime = 1000;
+
+      // Function to hide the preloader
+      function hidePreloader() {
+        preloader.classList.add("hide-loader");
+      }
+
+      // Hide preloader when page is fully loaded
+      window.addEventListener("load", hidePreloader);
+
+      // Fallback: Hide preloader after max load time if page hasn't loaded yet
+      setTimeout(hidePreloader, maxLoadTime);
+    </script>
+  </body>
+</html>

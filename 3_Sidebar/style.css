@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto Mono Light;
+ }
+ html,body{
+    width: 100%;
+    height: 100%;
+ }
+ main{
+    width: 100%;
+    height: 100%;
+ }
+ nav{
+   height: 80px;
+ 
+   background-color: black;
+   color: white;
+   background-color: black;
+ 
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ 
+ 
+ }
+ 
+ 
+ li{
+   list-style-type: none;
+ 
+ }
+
+ ul li:first-child{
+    display: none;
+ }
+ a{
+   text-decoration: none;
+   color: white;
+ }
+ 
+ .logo{
+   padding-left: 40px;
+ }
+ 
+ .links{
+   display: flex;
+   gap: 20px;
+ }
+ 
+ .icon{
+   padding-right: 40px;
+ }
+ p{
+   font-size: 20px;
+   font-weight: 700;
+   display: none;
+ }
+ 
+ 
+ @media (max-width:800px) {
+
+    p{
+        display: block;
+    }
+ 
+   .links{
+     position: fixed;
+     top:0px;
+     right: 0;
+     background-color: black;
+     border-left: 1px solid white;
+     width: 40%;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     padding-bottom: 20px;
+     padding-top: 20px;
+     
+     display: none;
+     
+   }
+  
+   .links-active{
+     display: flex;
+   }
+  
+   a:hover{
+     background-color: white;
+     color: black; 
+     font-weight: 600;
+     padding: 10px 20px;
+     border-radius: 25px;
+   }
+   p:hover{
+     cursor: pointer;
+   }
+
+   ul li:first-child{
+    display: block;
+    position: fixed;
+    top: 30px;
+    
+    
+
+ }
+
+   ul li:first-child:hover{
+    display: block;
+    cursor: pointer;
+    background-color: red;
+     color: black; 
+     font-weight: 600;
+     padding: 10px 20px;
+     border-radius: 25px;
+    
+
+ }
+ 
+   
+ }

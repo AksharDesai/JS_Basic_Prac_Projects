@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="style.css">
+  <title>Navbar</title>
+</head>
+<body>
+
+  <main>
+    <header>
+      <nav>
+        <div class="logo">
+          CodeBits
+        </div>
+        <ul class="links" id="linkBlock">
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Feedback</a></li>
+          
+        </ul>
+        <div class="icon">
+          <p id="menuList">:::</p>
+        </div>
+      </nav>
+
+    </header>
+  </main>
+  <script>
+    linkBlock = document.getElementById("linkBlock")
+    iconClick = document.querySelector("#menuList")
+
+    iconClick.addEventListener("click", () => {
+      console.log("clicked");
+      linkBlock.classList.toggle("links-active")
+    })
+
+    
+    
+  </script>
+</body>
+</html>

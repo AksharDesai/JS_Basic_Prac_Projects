@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "visualstudioexptteam.vscodeintellicode",
+    "tabnine.tabnine-vscode",
+    "xabikos.javascriptsnippets",
+    "akamud.vscode-javascript-snippet-pack",
+    "rodrigovallades.es7-react-js-snippets"
+  ]
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-slate-200">
+    <main>
+      <h1 class="text-6xl underline font-bold text-center mt-28">
+        Our Reviews
+      </h1>
+
+      <div
+        class="container bg-white shadow-lg w-[700px] h-[450px] mx-auto mt-14 flex flex-col items-center p-3"
+      >
+        <div
+          class="circle w-[120px] h-[150px] rounded-full bg-slate-900 mt-7 overflow-hidden border-4 border-green-200 shadow-lg"
+        >
+          <img
+           id="img" class="w-full h-full"
+            src="https://www.course-api.com/images/people/person-1.jpeg
+            "
+            alt=""
+          />
+        </div>
+        <h4 id="name" class="text-3xl mt-3 font-semibold">Default Girl</h4>
+        <h5 id="job" class="text-cyan-400 font-semibold">Default Web Developer</h5>
+        <p id="review" class="mt-4 text-lg text-center">
+          Defualt
+        </p>
+
+        <div class="buttons mt-6">
+          <button id="prev-btn"><i class="ri-arrow-left-line text-4xl mx-7"></i></button>
+          <button id="next-btn"><i class="ri-arrow-right-line text-4xl mx-7"></i></button>
+        </div>
+
+        <button id="surprise-btn" class="mt-4 bg-slate-950 text-white px-6 py-2 rounded-lg">
+          Surprise me
+        </button>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

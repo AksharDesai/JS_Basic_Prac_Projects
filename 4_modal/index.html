@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black">
+
+  <button id="modalBtn" class="text-black text-4xl bg-white px-10 py-4 flex items-center text-center rounded block mx-auto my-64 hover:bg-yellow-500">Modal</button>
+
+  <div id="overlay" class="bg-red-500 bg-opacity-20 fixed inset-0 hidden"></div>
+
+  <div id="modal" class="modal bg-white w-[600px] h-[350px] rounded mx-10 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hidden">
+    <div class="modal-header w-full h-auto bg-gray-200 flex items-center justify-between px-6">
+      <h1 class="font-bold text-2xl">Modal Header</h1>
+      <button id="modalClsBtn" class="text-2xl">X</button>
+    </div>
+    <div class="modal-body my-10 p-10">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam ducimus consectetur tempore vitae tenetur, voluptas saepe? Obcaecati porro explicabo mollitia ipsa aut impedit sequi corporis debitis cum, fugiat dolores harum velit voluptates optio totam minus iste quas asperiores nobis maxime voluptas. Modi itaque quod hic consequuntur veritatis voluptas, ipsam labore?
+    </div>
+  </div>
+
+  <script>
+    const modalBtn = document.getElementById("modalBtn");
+    const modal = document.getElementById("modal");
+    const modalClsBtn = document.getElementById("modalClsBtn");
+    const overlay = document.getElementById("overlay");
+
+    const toggleModal = () => {
+      modal.classList.toggle("hidden");
+      overlay.classList.toggle("hidden");
+    };
+
+    modalBtn.addEventListener("click", toggleModal);
+    modalClsBtn.addEventListener("click", toggleModal);
+  </script>
+</body>
+</html>
